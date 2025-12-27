@@ -48,7 +48,7 @@ const knownDates = new Set([
   if (newDates.length > 0) {
     console.log("🚨 NEW DATES FOUND:");
     newDates.forEach(d => console.log("  +", d));
-    // ← this is where you'd send email
+    process.exitCode = 1;
   } else {
     console.log("✅ No new dates");
   }
