@@ -3,7 +3,7 @@ name: Check BFI listings
 on:
   workflow_dispatch:
   schedule:
-    - cron: '*/5 * * * *'
+    - cron: '30 * * * *'
 jobs:
   run:
     runs-on: ubuntu-latest
