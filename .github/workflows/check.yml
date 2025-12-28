@@ -1,9 +1,9 @@
 name: Check BFI dates
 
 on:
+  workflow_dispatch:
   schedule:
-    - cron: '*/5 * * * *'
-
+    - cron: '0 * * * *'
 jobs:
   run:
     runs-on: ubuntu-latest
