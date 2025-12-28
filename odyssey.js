@@ -45,6 +45,8 @@ const knownDates = new Set([
     }
   }
 
+  console.log("Current Dates: " + currentDates);
+
   if (newDates.length > 0) {
     console.log("🚨 NEW DATES FOUND:");
     newDates.forEach(d => console.log("  +", d));
@@ -55,4 +57,5 @@ const knownDates = new Set([
 
   await browser.close();
 })();
+
 
