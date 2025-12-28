@@ -1,7 +1,7 @@
 const { chromium } = require("playwright");
 
 const knownDates = new Set([
-    // "Friday 17 July 2026 00:01",
+    "Friday 17 July 2026 00:01",
     "Friday 17 July 2026 20:15",
     "Saturday 18 July 2026 20:20",
     "Sunday 19 July 2026 20:20",
@@ -57,6 +57,7 @@ const knownDates = new Set([
 
   await browser.close();
 })();
+
 
 
 
